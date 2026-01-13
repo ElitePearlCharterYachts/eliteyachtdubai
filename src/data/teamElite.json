@@ -1,0 +1,253 @@
+{
+    "management": [
+        {
+            "name": "Kharizza Rivera",
+            "position": "Head Office & HR Manager",
+            "yearsExperience": 10,
+            "details": "",
+            "gender": "female"
+        },
+        {
+            "name": "Kamran Rafique",
+            "position": "Operations Manager",
+            "yearsExperience": 12,
+            "details": "",
+            "gender": "male"
+        },
+        {
+            "name": "Dananjaya Walgamage",
+            "position": "Operations Assistant",
+            "yearsExperience": 7,
+            "details": "",
+            "gender": "male"
+        },
+        {
+            "name": "Anzel Salim",
+            "position": "Accounting Manager",
+            "yearsExperience": 8,
+            "details": "",
+            "gender": "male"
+        },
+        {
+            "name": "Jhoanna Bea",
+            "position": "Quality Manager",
+            "yearsExperience": 7,
+            "details": "",
+            "gender": "female"
+        }
+    ],
+    "marketing": [
+        {
+            "name": "Muhammad Mashood",
+            "position": "Web Developer Specialist",
+            "yearsExperience": 4,
+            "details": "",
+            "gender": "male"
+        },
+        {
+            "name": "Mazid Mahamood",
+            "position": "Google ads Specialist",
+            "yearsExperience": 2,
+            "details": "",
+            "gender": "male"
+        },
+        {
+            "name": "Shayna Sha",
+            "position": "Social media ads Specialist",
+            "yearsExperience": 2,
+            "details": "",
+            "gender": "female"
+        }
+    ],
+    "clientRelations": [
+        {
+            "name": "Abdelrahman Elbarouky",
+            "position": "Account Executive",
+            "yearsExperience": 8,
+            "details": ""
+        },
+        {
+            "name": "Eslam Abdlatif",
+            "position": "Account Executive",
+            "yearsExperience": 8,
+            "details": ""
+        },
+        {
+            "name": "Jhoanna Bea",
+            "position": "Account Executive",
+            "yearsExperience": 7,
+            "details": "",
+            "gender": "female"
+        },
+        {
+            "name": "Rowena Banta",
+            "position": "Account Executive",
+            "yearsExperience": 5,
+            "details": "",
+            "gender": "female"
+        },
+        {
+            "name": "Maria Legaspino",
+            "position": "Account Executive",
+            "yearsExperience": 2,
+            "details": "",
+            "gender": "female"
+        }
+    ],
+    "captains": [
+        {
+            "name": "Argie Pagsanjan",
+            "position": "Licensed Professional Captain",
+            "yearsExperience": 12,
+            "details": "DMCA 24-Meter Licensed Holder"
+        },
+        {
+            "name": "Sharma Sasikumar",
+            "position": "Licensed Professional Captain",
+            "yearsExperience": 10,
+            "details": "DMCA 24-Meter Licensed Holder"
+        },
+        {
+            "name": "Jestoni Estuesta",
+            "position": "Licensed Professional Captain",
+            "yearsExperience": 8,
+            "details": "DMCA 24-Meter Licensed Holder"
+        },
+        {
+            "name": "Joebert Babac",
+            "position": "Licensed Professional Captain",
+            "yearsExperience": 8,
+            "details": "DMCA 24-Meter Licensed Holder"
+        },
+        {
+            "name": "Ram Palaniappan",
+            "position": "Licensed Professional Captain",
+            "yearsExperience": 6,
+            "details": "DMCA Engine Operator & 24-Meter Licensed Holder"
+        },
+        {
+            "name": "Siva Ramachandran",
+            "position": "Licensed Professional Captain",
+            "yearsExperience": 7,
+            "details": "DMCA 12-Meter Licensed Holder"
+        },
+        {
+            "name": "Bhavitharan Vaithiyanathan",
+            "position": "Licensed Professional Captain",
+            "yearsExperience": 8,
+            "details": "DMCA 24-Meter Licensed Holder"
+        },
+        {
+            "name": "Vignesh Anburaja",
+            "position": "Licensed Professional Captain",
+            "yearsExperience": 6,
+            "details": "DMCA 12-Meter Licensed Holder"
+        },
+        {
+            "name": "Adrian Lazo",
+            "position": "Licensed Professional Captain",
+            "yearsExperience": 4,
+            "details": "DMCA 12-Meter Licensed Holder • Marine Fishing Professional"
+        }
+    ],
+    "crew": [
+        {
+            "name": "Darwin Cobcoban",
+            "position": "Licensed Skilled Crew",
+            "yearsExperience": 9,
+            "details": "DMCA Seaman Permit Holder"
+        },
+        {
+            "name": "Naresh Kannan",
+            "position": "Licensed Skilled Crew",
+            "yearsExperience": 6,
+            "details": "DMCA Seaman Permit & Engine Operator Licensed Holder"
+        },
+        {
+            "name": "Dilup Hettiarachchi",
+            "position": "Licensed Skilled Crew",
+            "yearsExperience": 5,
+            "details": "DMCA Seaman Permit Holder"
+        },
+        {
+            "name": "Jerome Enriquez",
+            "position": "Licensed Skilled Crew",
+            "yearsExperience": 4,
+            "details": "DMCA Seaman Permit Holder • Professional Chef on board"
+        },
+        {
+            "name": "Felix Hina",
+            "position": "Licensed Skilled Crew",
+            "yearsExperience": 4,
+            "details": "DMCA Seaman Permit Holder"
+        },
+        {
+            "name": "Silambarasan Narasingapermal",
+            "position": "Licensed Skilled Crew",
+            "yearsExperience": 4,
+            "details": "DMCA Seaman Permit Holder"
+        },
+        {
+            "name": "Sahaya Vargheese",
+            "position": "Licensed Skilled Crew",
+            "yearsExperience": 4,
+            "details": "DMCA Seaman Permit Holder"
+        },
+        {
+            "name": "Senthilkumar Vallathan",
+            "position": "Skilled Crew",
+            "yearsExperience": 2,
+            "details": "STCW Certificate Holder"
+        },
+        {
+            "name": "Jinnelle Piol",
+            "position": "Skilled Crew",
+            "yearsExperience": 2,
+            "details": "STCW Certificate Holder • Event Organizer on board"
+        }
+    ],
+    "stewards": [
+        {
+            "name": "Emilyn Reola",
+            "position": "Certified & Professional Stewards",
+            "yearsExperience": 8,
+            "details": "DMCA Seaman Permit Holder",
+            "gender": "female"
+        },
+        {
+            "name": "Ellen Reyes",
+            "position": "Certified & Professional Stewards",
+            "yearsExperience": 7,
+            "details": "DMCA Seaman Permit Holder",
+            "gender": "female"
+        },
+        {
+            "name": "Lea Licupa",
+            "position": "Certified & Professional Stewards",
+            "yearsExperience": 6,
+            "details": "DMCA Seaman Permit Holder",
+            "gender": "female"
+        },
+        {
+            "name": "Arlene Cawaing",
+            "position": "Certified & Professional Stewards",
+            "yearsExperience": 5,
+            "details": "DMCA Seaman Permit Holder",
+            "gender": "female"
+        },
+        {
+            "name": "Julina Ochea",
+            "position": "Professional Stewards",
+            "yearsExperience": 2,
+            "details": "STCW Certificate Holder",
+            "gender": "female"
+        },
+        {
+            "name": "Mary Grace Llaban",
+            "position": "Professional Stewards",
+            "yearsExperience": 2,
+            "details": "STCW Certificate Holder",
+            "gender": "female"
+        }
+    ]
+}
