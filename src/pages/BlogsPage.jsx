@@ -26,7 +26,7 @@ export default function BlogsPage() {
   const [err, setErr] = useState("");
 
   const [from, setFrom] = useState(0);
-  const [total, setTotal] = useState(null); // count from supabase
+  const [total, setTotal] = useState(null);
 
   const loadFirst = async () => {
     setLoading(true);
@@ -66,7 +66,6 @@ export default function BlogsPage() {
       const res = await listPublishedBlogs({ limit: PAGE_SIZE, from });
       const rows = Array.isArray(res?.data) ? res.data : [];
 
-      // append (avoid duplicates just in case)
       setBlogs((prev) => {
         const seen = new Set(prev.map((x) => x.id));
         const next = rows.filter((x) => x?.id && !seen.has(x.id));
@@ -87,7 +86,6 @@ export default function BlogsPage() {
     loadFirst();
   }, []);
 
-  // Download covers as blob URLs
   useEffect(() => {
     let alive = true;
 
@@ -124,7 +122,6 @@ export default function BlogsPage() {
     };
   }, [blogs, covers]);
 
-  // Cleanup blob URLs
   useEffect(() => {
     return () => {
       Object.values(covers).forEach((u) => {
@@ -135,29 +132,28 @@ export default function BlogsPage() {
     };
   }, [covers]);
 
-  const hasMore =
-    total == null ? true : blogs.length < total; // if count available, use it
+  const hasMore = total == null ? true : blogs.length < total;
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-10 text-white">
+    <div className="max-w-6xl mx-auto px-4 py-10 text-black">
       <div className="flex items-center justify-between gap-3">
-        <h1 className="text-3xl font-semibold">Blogs</h1>
+        <h1 className="text-3xl font-semibold text-black">Blogs</h1>
 
         <button
           onClick={loadFirst}
           disabled={loading}
-          className="rounded-xl px-4 py-2 text-sm ring-1 ring-white/10 bg-white/5 hover:bg-white/10 transition disabled:opacity-60"
+          className="rounded-xl px-4 py-2 text-sm ring-1 ring-black/10 bg-black/5 hover:bg-black/10 transition disabled:opacity-60"
         >
           {loading ? "Loading…" : "Refresh"}
         </button>
       </div>
 
       {err ? (
-        <div className="mt-6 rounded-2xl bg-red-500/10 ring-1 ring-red-500/20 p-4">
-          <p className="text-sm text-red-200 font-semibold">
+        <div className="mt-6 rounded-2xl bg-red-50 ring-1 ring-red-200 p-4">
+          <p className="text-sm text-red-700 font-semibold">
             Failed to load blogs
           </p>
-          <p className="mt-1 text-xs text-red-200/80">{err}</p>
+          <p className="mt-1 text-xs text-red-600">{err}</p>
         </div>
       ) : null}
 
@@ -166,13 +162,13 @@ export default function BlogsPage() {
           {Array.from({ length: 6 }).map((_, i) => (
             <div
               key={i}
-              className="rounded-2xl bg-white/5 ring-1 ring-white/10 overflow-hidden"
+              className="rounded-2xl bg-white ring-1 ring-black/10 overflow-hidden shadow-sm"
             >
-              <div className="h-48 bg-white/5 animate-pulse" />
+              <div className="h-48 bg-black/5 animate-pulse" />
               <div className="p-5 space-y-3">
-                <div className="h-3 w-24 bg-white/10 rounded animate-pulse" />
-                <div className="h-4 w-3/4 bg-white/10 rounded animate-pulse" />
-                <div className="h-3 w-full bg-white/10 rounded animate-pulse" />
+                <div className="h-3 w-24 bg-black/10 rounded animate-pulse" />
+                <div className="h-4 w-3/4 bg-black/10 rounded animate-pulse" />
+                <div className="h-3 w-full bg-black/10 rounded animate-pulse" />
               </div>
             </div>
           ))}
@@ -180,8 +176,8 @@ export default function BlogsPage() {
       ) : null}
 
       {!loading && !err && blogs.length === 0 ? (
-        <div className="mt-10 rounded-2xl bg-white/5 ring-1 ring-white/10 p-6">
-          <p className="text-sm text-white/80 font-semibold">
+        <div className="mt-10 rounded-2xl bg-white ring-1 ring-black/10 p-6 shadow-sm">
+          <p className="text-sm text-black/70 font-semibold">
             No published blogs found
           </p>
         </div>
@@ -200,7 +196,7 @@ export default function BlogsPage() {
                 <Link
                   key={b.id}
                   to={`/مدونة/${b.slug}`}
-                  className="group rounded-2xl bg-white/5 ring-1 ring-white/10 overflow-hidden hover:bg-white/10 transition"
+                  className="group rounded-2xl bg-white ring-1 ring-black/10 overflow-hidden hover:shadow-md transition shadow-sm"
                 >
                   {cover ? (
                     <img
@@ -210,13 +206,13 @@ export default function BlogsPage() {
                       loading="lazy"
                     />
                   ) : (
-                    <div className="h-48 bg-white/5" />
+                    <div className="h-48 bg-gray-100" />
                   )}
 
                   <div className="p-5">
-                    <p className="text-xs text-white/50">{date}</p>
-                    <h3 className="mt-2 text-lg font-semibold">{b.title}</h3>
-                    <p className="mt-2 text-sm text-white/70 line-clamp-3">
+                    <p className="text-xs text-black/40">{date}</p>
+                    <h3 className="mt-2 text-lg font-semibold text-black">{b.title}</h3>
+                    <p className="mt-2 text-sm text-black/60 line-clamp-3">
                       {b.excerpt || ""}
                     </p>
                   </div>
@@ -229,7 +225,7 @@ export default function BlogsPage() {
             <button
               onClick={loadMore}
               disabled={!hasMore || loadingMore}
-              className="rounded-xl px-5 py-2 text-sm ring-1 ring-white/10 bg-white/5 hover:bg-white/10 transition disabled:opacity-60"
+              className="rounded-xl px-5 py-2 text-sm ring-1 ring-black/10 bg-white hover:bg-gray-50 transition disabled:opacity-60 shadow-sm"
             >
               {loadingMore
                 ? "Loading more…"
@@ -240,7 +236,7 @@ export default function BlogsPage() {
           </div>
 
           {typeof total === "number" ? (
-            <p className="mt-3 text-center text-xs text-white/40">
+            <p className="mt-3 text-center text-xs text-black/40">
               Showing {blogs.length} of {total}
             </p>
           ) : null}

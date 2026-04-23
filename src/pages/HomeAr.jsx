@@ -8,7 +8,6 @@ import YachtsSection from "../components/YachtsSection";
 import ReviewsSlider from "../components/ReviewsSlider";
 import BrandsGroupSection from "../components/BrandsGroupSection";
 import CTASection from "../components/CTASection";
-import FAQPAGE from "../components/FAQPAGE";
 import ContentSection from "../components/ContentSection"
 
 function applyTM(input = "") {
@@ -122,7 +121,6 @@ export default function HomeAr() {
             <ReviewsSlider />
             </div>
             <CTASection variant="fleet" />
-            <FAQPAGE />
             <ContentSection />
 
         </main>

@@ -226,6 +226,18 @@ export default function Navbar() {
             {/* LEFT: CONTACT BUTTONS (DESKTOP) */}
             <div className="hidden md:flex items-center justify-end gap-3 shrink-0">
               <a
+                href="https://eliteyachtdubai.com/en/"
+                className="h-10 w-10 grid place-items-center rounded-full border border-black/10 bg-white"
+                aria-label="English"
+              >
+                <img
+                  src="https://flagcdn.com/w40/us.png"
+                  alt="English"
+                  className="h-7 w-7 rounded-full object-cover"
+                />
+              </a>
+
+              <a
                 href={WHATSAPP}
                 dir="ltr"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-black/10 bg-white text-black/80 hover:text-black hover:border-black/25 hover:shadow-[0_10px_30px_rgba(0,0,0,0.10)] transition"
@@ -329,6 +341,19 @@ export default function Navbar() {
                         </div>
                       );
                     })}
+
+                    {/* LANGUAGE SWITCH */}
+                    <a
+                      href="https://eliteyachtdubai.com/en/"
+                      className="flex items-center justify-center gap-2 rounded-full px-5 py-3 border border-black/10 bg-white text-black/85 hover:text-black hover:border-black/25 hover:shadow-[0_10px_30px_rgba(0,0,0,0.10)] transition"
+                    >
+                      <img
+                        src="https://flagcdn.com/w40/us.png"
+                        alt="English"
+                        className="h-5 w-5 rounded-full object-cover"
+                      />
+                      <span className="tracking-widest text-[12px] font-bold">English</span>
+                    </a>
 
                     {/* MOBILE CONTACT */}
                     <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
